@@ -17,7 +17,7 @@ approach to get a good time measure. **Levelwise** pagerank is the
 pagerank is **faster** than the *static* approach for many batch sizes. In
 order to measure error, [nvGraph] pagerank is taken as a reference.
 
-All outputs are saved in [out](out/) and a small part of the output is listed
+All outputs are saved in [gist] and a small part of the output is listed
 here. Some [charts] are also included below, generated from [sheets]. The input
 data used for this experiment is available at ["graphs"] (for small ones), and
 the [SuiteSparse Matrix Collection].
@@ -189,14 +189,15 @@ $ ...
 [STIC-D algorithm]: https://www.slideshare.net/SubhajitSahu/sticd-algorithmic-techniques-for-efficient-parallel-pagerank-computation-on-realworld-graphs
 [nvGraph]: https://github.com/rapidsai/nvgraph
 ["graphs"]: https://github.com/puzzlef/graphs
-[pr-nvgraph]: https://github.com/puzzlef/pagerank-nvgraph-static-vs-dynamic
-[monolithic CUDA]: https://github.com/puzzlef/pagerank-cuda-monolithic-vs-levelwise
-[levelwise CUDA]: https://github.com/puzzlef/pagerank-cuda-monolithic-vs-levelwise
-[pull]: https://github.com/puzzlef/pagerank-push-vs-pull
-[CSR]: https://github.com/puzzlef/pagerank-class-vs-csr
-[skip-teleport]: https://github.com/puzzlef/pagerank-levelwise-skip-teleport
-[compute-5M]: https://github.com/puzzlef/pagerank-levelwise-cuda-adjust-compute-size
-[skip-comp]: https://github.com/puzzlef/pagerank-levelwise-dynamic-validate-skip-unchanged-components
-[scaled-fill]: https://github.com/puzzlef/pagerank-dynamic-adjust-ranks
+[pr-nvgraph]: https://github.com/puzzlef/pagerank-nvgraph-dynamic
+[monolithic CUDA]: https://github.com/puzzlef/pagerank-levelwise-cuda
+[levelwise CUDA]: https://github.com/puzzlef/pagerank-levelwise-cuda
+[pull]: https://github.com/puzzlef/pagerank
+[CSR]: https://github.com/puzzlef/pagerank
+[skip-teleport]: https://github.com/puzzlef/pagerank-levelwise
+[compute-5M]: https://github.com/puzzlef/pagerank-levelwise-cuda
+[skip-comp]: https://github.com/puzzlef/pagerank-levelwise-dynamic
+[scaled-fill]: https://github.com/puzzlef/pagerank-dynamic
+[gist]: https://gist.github.com/wolfram77/45d64c5401521b3cb18ffb15ed567c1a
 [charts]: https://photos.app.goo.gl/mu2v8BrMsxkWKEM17
 [sheets]: https://docs.google.com/spreadsheets/d/17-W0dGD6wjBvVaXVILlmUGFpBnPfaMIRPaqRf7u9mUk/edit?usp=sharing
